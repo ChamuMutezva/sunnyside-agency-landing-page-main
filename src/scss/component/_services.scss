@@ -1,0 +1,77 @@
+@use '../base';
+
+.services__wrapper {
+	padding: 3.5rem 1.5rem 1.8rem;
+	text-align: center;
+}
+
+.services__item {
+	display: flex;
+	flex-direction: column;
+	//color: aqua;
+}
+
+.services__title {
+	font-size: 2rem;
+	margin-bottom: 2.8rem;
+}
+
+.services__content {
+	font-size: 1.125rem;
+	margin-bottom: 2.5rem;
+	color: #808397;
+}
+
+.photo__content {
+	color: #19536C;
+}
+.photo__title {
+	color: #052C3B;
+}
+.graphic__title {
+	color: #24554A;
+}
+
+.learn__link--btn {
+	font-family: base.$heading-font;
+	font-size: 0.9375rem;
+	color: base.$black-text;
+	text-decoration: none;
+	position: relative;
+	z-index: 2;
+
+	&::before {
+		position: absolute;
+		content: "";
+		bottom: -1px;
+		left: -3px;
+		width: 110%;
+		height: 0.6rem;
+		background-color: #FAD400;
+		border-radius: 4px;
+		z-index: -1;
+	}
+}
+
+.graphic__design, .photo__design {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: 50% 0%;
+}
+
+.graphic__design {
+	background-image: url("../../images/mobile/image-graphic-design.jpg");	
+}
+
+.photo__design {
+	background-image: url("../../images/mobile/image-photography.jpg");
+}
+
+.designs {
+	padding-top: 100%;
+}
+
+.designs__wrapper {
+	text-align: center;
+	padding: 1.5rem;
+}

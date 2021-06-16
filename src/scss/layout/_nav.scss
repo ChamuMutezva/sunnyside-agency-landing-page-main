@@ -1,0 +1,22 @@
+.nav {
+	position: relative;
+	padding: 2rem 1.5rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: baseline;
+}
+.menu__btn {
+	background-color: inherit;
+	border: none;
+}
+
+.nav__list {
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	gap: 30px;
+}
+
+.hide__nav {
+	display: none;
+}
