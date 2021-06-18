@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "![Design preview for the Sunnyside agency landing page coding challenge](./design/desktop-preview.jpg)",
   "main": "index.js",
-  "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+  "scripts": {    
+    "start": "parcel index.html",
+    "build": "npm run parcel && npm run sass",
+    "sass": "sass src/scss/main.scss:src/css/style.css",
+    "parcel": "parcel build index.html"
   },
   "keywords": [],
   "author": "",

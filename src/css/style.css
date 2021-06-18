@@ -94,7 +94,7 @@ h1, h2, h3, h4, h4, h5, h6 {
 header {
   position: relative;
   color: white;
-  background-image: url("/image-header.dab4d08b.jpg");
+  background-image: url("../../images/mobile/image-header.jpg");
   background-repeat: no-repeat;
   width: 100%;
   line-height: 0;
@@ -104,7 +104,7 @@ header {
 
 @media screen and (min-width: 620px) {
   header {
-    background-image: url("/image-header.ffd6b8fd.jpg");
+    background-image: url("../../images/desktop/image-header.jpg");
   }
 }
 .nav {
@@ -215,11 +215,11 @@ header {
 }
 
 .graphic__design {
-  background-image: url("/image-graphic-design.b97e81ff.jpg");
+  background-image: url("../../images/mobile/image-graphic-design.jpg");
 }
 
 .photo__design {
-  background-image: url("/image-photography.6562ae8a.jpg");
+  background-image: url("../../images/mobile/image-photography.jpg");
 }
 
 .designs {
@@ -278,4 +278,4 @@ header {
   margin-bottom: 4.5rem;
 }
 
-/*# sourceMappingURL=/main.d9ee62f6.css.map */
+/*# sourceMappingURL=style.css.map */
