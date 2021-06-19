@@ -1,0 +1,314 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role=list],
+ol[role=list] {
+  list-style: none;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+*::before,
+*::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+body {
+  font-family: "Barlow", sans-serif;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+  line-height: 1;
+  color: #24303E;
+}
+
+header {
+  position: relative;
+  color: white;
+  background-image: url("/image-header.dab4d08b.jpg");
+  background-repeat: no-repeat;
+  width: 100%;
+  line-height: 0;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+@media screen and (min-width: 620px) {
+  header {
+    background-image: url("/image-header.ffd6b8fd.jpg");
+  }
+}
+.nav {
+  position: relative;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.menu__btn {
+  background-color: inherit;
+  border: none;
+}
+
+.nav__list {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hide__nav {
+  display: none;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__wrapper {
+  background-color: #90D4C6;
+}
+
+.footer__logo path {
+  fill: #2C7566;
+}
+
+.footer__nav {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.socials {
+  display: flex;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-top: 69%;
+}
+
+.hero__content {
+  position: relative;
+  top: -17rem;
+}
+
+.arrow {
+  display: block;
+  margin: auto;
+  position: relative;
+  top: 7.5rem;
+}
+
+.main__title {
+  font-size: 2.5rem;
+  letter-spacing: 6.25px;
+}
+
+.services__wrapper {
+  padding: 3.5rem 1.5rem 1.8rem;
+  text-align: center;
+}
+
+.services__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__title {
+  font-size: 2rem;
+  margin-bottom: 1.8rem;
+}
+
+.services__content {
+  font-size: 1.125rem;
+  margin-bottom: 2.5rem;
+  color: #808397;
+}
+
+.photo__content {
+  color: #19536C;
+}
+
+.photo__title {
+  color: #052C3B;
+}
+
+.graphic__title {
+  color: #24554A;
+}
+
+.learn__link--btn {
+  font-family: "Fraunces", serif;
+  font-size: 0.9375rem;
+  color: #24303E;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+}
+.learn__link--btn::before {
+  position: absolute;
+  content: "";
+  bottom: -1px;
+  left: -3px;
+  width: 110%;
+  height: 0.6rem;
+  background-color: #FAD400;
+  border-radius: 4px;
+  z-index: -1;
+}
+
+.graphic__design, .photo__design {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 0%;
+}
+
+.graphic__design {
+  background-image: url("/image-graphic-design.b97e81ff.jpg");
+}
+
+.photo__design {
+  background-image: url("/image-photography.6562ae8a.jpg");
+}
+
+.designs {
+  padding-top: 100%;
+}
+
+.designs__wrapper {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.testimonials {
+  text-align: center;
+  padding: 4rem 1.5rem 3.5rem;
+  background-color: #FFFCF8;
+}
+
+.testimonials__img {
+  border-radius: 50%;
+  margin: auto;
+  max-width: 4.5rem;
+}
+
+.testimonials__header {
+  color: #a7aaad;
+  font-size: 1rem;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.testimonial__list {
+  margin-top: 4.5rem;
+}
+
+.testimonial__content {
+  margin-top: 2rem;
+}
+
+.testimonial__content__item {
+  line-height: 1.9;
+  padding-bottom: 2rem;
+}
+
+.testimonial__content__heading {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+.testimonial__content__heading span {
+  font-family: "Barlow", sans-serif;
+  font-size: 0.875rem;
+  color: #a7aaad;
+}
+
+.testimonials__item {
+  margin-bottom: 4.5rem;
+}
+
+
+
+
+/*# sourceMappingURL=/style.967ba849.css.map */
