@@ -10,11 +10,11 @@
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <link rel="stylesheet" href="/main.d9ee62f6.css">
-  <link rel="stylesheet" href="/style.967ba849.css">
+  <!-- <link rel="stylesheet" href="./src/css/style.css"> -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
-<script src="/main.d9ee62f6.js"></script><script src="/style.967ba849.js"></script></head>
+<script src="/main.d9ee62f6.js"></script></head>
 
 <body>
   <div class="wrapper">
@@ -49,7 +49,7 @@
 
         <div class="services__item brand">
           <div class="services__img brand__img">
-            <picture>
+            <picture class="services__img__flow">
               <source media="(min-width: 620px)" srcset="/image-transform.1d7ab604.jpg">
               <source media="(max-width: 619px )" srcset="/image-transform.6d31fd40.jpg">
               <img src="/image-transform.6d31fd40.jpg" alt="">
@@ -63,14 +63,14 @@
                 We are a full-service creative agency specializing in helping brands grow fast.
                 Engage your clients through compelling visuals that do most of the marketing for you.
               </p>
-              <a class="learn__link--btn" href="">Learn more</a>
+              <div class="learn__wrapper"><a class="learn__link--btn" href="">Learn more</a></div>
             </div>
           </div>
         </div>
 
         <div class="services__item stand__out">
           <div class="services__img">
-            <picture>
+            <picture class="services__img__flow">
               <source media="(min-width: 620px)" srcset="/image-stand-out.928b9389.jpg">
               <source media="(max-width: 619px )" srcset="/image-stand-out.b02fd3e7.jpg">
               <img src="/image-transform.6d31fd40.jpg" alt="">
@@ -85,30 +85,33 @@
                 we’ll build
                 and extend your brand in digital places.
               </p>
-              <a class="learn__link--btn" href="">Learn more</a>
+              <div class="learn__wrapper"><a class="learn__link--btn" href="">Learn more</a></div>
             </div>
           </div>
 
         </div>
 
-        <div class="services__item graphic__design">
-          <div class="designs">
-            <div class="designs__wrapper">
-              <h2 class="services__title graphic__title">Graphic design</h2>
-              <p class="services__content graphic__content">Great design makes you memorable. We deliver artwork that
-                underscores your brand message and captures potential clients’ attention.</p>
+        <div class="services__deco__img">
+
+          <div class="services__item graphic__design">
+            <div class="designs">
+              <div class="designs__wrapper">
+                <h2 class="services__title graphic__title">Graphic design</h2>
+                <p class="services__content graphic__content">Great design makes you memorable. We deliver artwork that
+                  underscores your brand message and captures potential clients’ attention.</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        <div class="services__item photo__design">
-          <div class="designs">
-            <div class="designs__wrapper">
-              <h2 class="services__title photo__title"> Photography</h2>
-              <p class="services__content photo__content">
-                Increase your credibility by getting the most stunning, high-quality photos that improve your business
-                image.
-              </p>
+          <div class="services__item photo__design">
+            <div class="designs">
+              <div class="designs__wrapper">
+                <h2 class="services__title photo__title"> Photography</h2>
+                <p class="services__content photo__content">
+                  Increase your credibility by getting the most stunning, high-quality photos that improve your business
+                  image.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -179,26 +182,28 @@
         </div>
       </section>
       <aside class="products">
-        <picture>
+        <picture class="product__item">
           <source media="(min-width: 620px)" srcset="/image-gallery-milkbottles.0d56e328.jpg">
           <source media="(max-width: 619px )" srcset="/image-gallery-milkbottles.96649a76.jpg">
           <img src="/image-gallery-milkbottles.96649a76.jpg" alt="">
         </picture>
-        <picture>
+        <picture class="product__item">
           <source media="(min-width: 620px)" srcset="/image-gallery-orange.9a461a20.jpg">
           <source media="(max-width: 619px )" srcset="/image-gallery-orange.d7ca1151.jpg">
           <img src="/image-gallery-orange.d7ca1151.jpg" alt="">
         </picture>
-        <picture>
+
+        <picture class="product__item">
           <source media="(min-width: 620px)" srcset="/image-gallery-cone.46ea699d.jpg">
           <source media="(max-width: 619px )" srcset="/image-gallery-cone.4fe83844.jpg">
           <img src="/image-gallery-cone.4fe83844.jpg" alt="">
         </picture>
-        <picture>
+        <picture class="product__item">
           <source media="(min-width: 620px)" srcset="/image-gallery-sugarcubes.57ab72b9.jpg">
           <source media="(max-width: 619px )" srcset="/image-gallery-sugar-cubes.58bb78fc.jpg">
           <img src="/image-gallery-sugar-cubes.58bb78fc.jpg" alt="">
         </picture>
+
       </aside>
     </main>
     <footer class="footer__wrapper">

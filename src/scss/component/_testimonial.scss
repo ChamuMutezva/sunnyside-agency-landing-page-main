@@ -45,5 +45,16 @@
 }
 
 .testimonials__item {
-	margin-bottom: 4.5rem;
+	max-width: 30rem;
+	margin: auto auto 4.5rem;
+	//margin-bottom: 4.5rem;
 }
+
+@media screen and (min-width: 620px) { 
+	.testimonial__list {
+		display: flex;
+		flex-direction: row;
+		gap: 1rem;
+	}
+}
+
