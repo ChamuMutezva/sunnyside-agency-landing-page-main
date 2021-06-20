@@ -122,10 +122,36 @@ header {
 }
 
 .nav__list {
-  padding: 0;
+  padding: 3.5rem;
   display: flex;
   flex-direction: column;
   gap: 30px;
+  position: absolute;
+  background-color: white;
+  width: 84%;
+  left: 50%;
+  margin-left: -42%;
+  top: 5.5rem;
+  z-index: 5;
+}
+.nav__list::before {
+  position: absolute;
+  content: "";
+  top: -24px;
+  right: 0;
+  width: 0;
+  height: 0;
+  border: 24px solid transparent;
+  border-right: 24px solid white;
+}
+
+.nav__list__item {
+  text-align: center;
+}
+
+.link--btn {
+  color: #818498;
+  /* padding: 1rem; */
 }
 
 .hide__nav {
@@ -139,6 +165,16 @@ header {
 
   .nav__list {
     flex-direction: row;
+    position: relative;
+    padding: 0;
+    left: 0;
+    top: 0;
+    margin-left: 0;
+    background-color: transparent;
+    width: auto;
+  }
+  .nav__list::before {
+    content: none;
   }
 
   .menu {
@@ -235,7 +271,7 @@ header {
     top: -20rem;
   }
 }
-@media screen and (min-width: 880px) {
+@media screen and (min-width: 1180px) {
   .hero {
     padding-top: 37.5%;
   }
@@ -274,9 +310,12 @@ header {
 }
 
 .services__content {
+  display: flex;
+  place-content: center;
   font-size: 1.125rem;
   margin-bottom: 2.5rem;
   color: #808397;
+  align-items: center;
 }
 
 .services__img__flow {
@@ -338,11 +377,13 @@ header {
 
 .designs {
   padding-top: 100%;
+  margin: 0 auto;
 }
 
 .designs__wrapper {
   text-align: center;
   padding: 1.5rem;
+  max-width: 22.25rem;
 }
 
 @media screen and (min-width: 620px) {
@@ -360,6 +401,11 @@ header {
 
   .services__deco__img {
     display: flex;
+  }
+}
+@media screen and (min-width: 1180px) {
+  .services__wrapper {
+    text-align: left;
   }
 }
 .testimonials {
