@@ -119,6 +119,14 @@ header {
 .menu__btn {
   background-color: inherit;
   border: none;
+  transition: all 1s ease-out;
+}
+.menu__btn:focus {
+  outline: none;
+}
+.menu__btn:focus:focus-visible, .menu__btn:hover {
+  outline: max(1px, 0.1em) dashed currentColor;
+  outline-offset: 0.25em;
 }
 
 .nav__list {
@@ -159,7 +167,7 @@ header {
 .link--btn:focus {
   outline: none;
 }
-.link--btn:focus:focus-visible {
+.link--btn:focus:focus-visible, .link--btn:hover {
   outline: max(1px, 0.1em) dashed currentColor;
   outline-offset: 0.25em;
 }
@@ -221,19 +229,6 @@ header {
     align-items: center;
   }
 }
-.skip__to__content {
-  left: 50%;
-  position: absolute;
-  transform: translateY(-100%);
-  background-color: #5a636c;
-  height: 30px;
-  padding: 8px;
-  transition: transformY(0.3s);
-}
-.skip__to__content:focus {
-  transform: translateY(0.3s);
-}
-
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -299,6 +294,10 @@ header {
   margin: auto;
   position: relative;
   top: 5.5rem;
+  transition: all 1s ease-out;
+}
+.arrow:hover {
+  transform: scale(1.2);
 }
 
 .main__title {
@@ -513,7 +512,7 @@ header {
 }
 
 .testimonials__item {
-  max-width: 30rem;
+  max-width: 20rem;
   margin: auto auto 4.5rem;
 }
 
@@ -524,6 +523,20 @@ header {
     gap: 1rem;
   }
 }
+.skip__to__content {
+  left: 50%;
+  position: absolute;
+  transform: translateY(-100%);
+  background-color: #fe7867;
+  height: 36px;
+  padding: 5px;
+  transition: transform 0.3s;
+  z-index: 10;
+}
+.skip__to__content:focus {
+  transform: translateY(0%);
+}
+
 .wrapper {
   max-width: 1480px;
   margin: auto;

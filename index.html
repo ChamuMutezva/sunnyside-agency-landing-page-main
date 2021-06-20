@@ -9,8 +9,8 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
-  <link rel="stylesheet" href="./src/scss/main.scss"> 
-  <link rel="stylesheet" href="./src/css/style.css"> 
+  <link rel="stylesheet" href="./src/scss/main.scss">
+  <link rel="stylesheet" href="./src/css/style.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap"
     rel="stylesheet">
@@ -19,13 +19,22 @@
 
 <body>
   <div class="wrapper">
+    <!--skip to main content - keyboard users-->
     <a class="skip__to__content" href="#main">Skip to content</a>
+
+    <!--HEADER SECTION-->
     <header>
       <nav class="nav">
+        <!--sunnyside logo-->
         <div class="logo">
-          <a class="link--btn" href="./"><img src="./images/logo.svg" alt="welcome to Sunnyside homepage"></a>
+          <a class="link--btn" href="./">
+            <img src="./images/logo.svg" alt="welcome to Sunnyside homepage">
+          </a>
         </div>
+
+        <!--main header navigation-->
         <ul class="nav__list hide__nav">
+
           <li class="nav__list__item">
             <a class="link--btn" href="./" aria-label="about page">About</a>
           </li>
@@ -39,13 +48,14 @@
             <a class="link--btn contact--btn" href="./" aria-label="contact us page">Contact</a>
           </li>
         </ul>
+        <!--menu control-->
         <div class="menu">
           <button class="menu__btn">
             <img class="menu__img" src="./images/icon-hamburger.svg" alt="open navigation">
           </button>
         </div>
       </nav>
-
+      <!--hero section-->
       <div class="hero">
         <div class="hero__content">
           <h1 class="main__title">We are creatives</h1>
@@ -53,10 +63,13 @@
         </div>
       </div>
     </header>
+    <!--END OF HEADER SECTION-->
 
+    <!--MAIN SECTION-->
     <main id="main">
+      <!--SERVICES SECTION-->
       <section class="services">
-
+        <!--FIRST SERVICE-->
         <div class="services__item brand">
           <div class="services__img brand__img">
             <picture class="services__img__flow">
@@ -75,13 +88,13 @@
               </p>
               <div class="learn__wrapper">
                 <a class="link--btn learn__link--btn" href="./">Learn more
-                   <span class="sr__only--link"> about how to promote your brand</span>
-                  </a>
+                  <span class="sr__only--link"> about how to promote your brand</span>
+                </a>
               </div>
             </div>
           </div>
         </div>
-
+        <!--SECOND SERVICE-->
         <div class="services__item stand__out">
           <div class="services__img">
             <picture class="services__img__flow">
@@ -110,7 +123,7 @@
         </div>
 
         <div class="services__deco__img">
-
+          <!--THIRD SERVICE-->
           <div class="services__item graphic__design">
             <div class="designs">
               <div class="designs__wrapper">
@@ -121,12 +134,13 @@
             </div>
           </div>
 
+          <!--FOURTH SERVICE-->
           <div class="services__item photo__design">
             <div class="designs">
               <div class="designs__wrapper">
                 <h2 class="services__title photo__title"> Photography</h2>
                 <p class="services__content photo__content">
-                  Increase your credibility by getting the most stunning, 
+                  Increase your credibility by getting the most stunning,
                   high-quality photos that improve your business image.
                 </p>
               </div>
@@ -135,12 +149,15 @@
         </div>
 
       </section>
+      <!--END OF SERVICES SECTION-->
 
+      <!--TESTIMONIALS SECTION-->
       <section class="testimonials">
         <h2 class="testimonials__header">
           Client testimonials
         </h2>
         <div class="testimonial__list">
+          <!--1ST TESTIMONY-->
           <figure class="testimonials__item">
             <img class="testimonials__img" src="./images/image-emily.jpg" alt="the managing director Emily r">
             <figcaption class="testimonial__content">
@@ -160,13 +177,13 @@
               </h3>
             </figcaption>
           </figure>
-
+          <!--SECOND TESTIMONY-->
           <figure class="testimonials__item">
             <img class="testimonials__img" src="./images/image-thomas.jpg" alt="the chief Operating officer Thomas s">
             <figcaption class="testimonial__content">
               <p class="testimonial__content__item">
                 Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
-                 success made it a satisfying and enjoyable experience.
+                success made it a satisfying and enjoyable experience.
               </p>
               <h3 class="testimonial__content__heading">
                 <strong>
@@ -178,13 +195,13 @@
               </h3>
             </figcaption>
           </figure>
-
+          <!--THIRD TESTIMONY-->
           <figure class="testimonials__item">
             <img class="testimonials__img" src="./images/image-jennie.jpg" alt="business owner Jennie f">
             <figcaption class="testimonial__content">
               <p class="testimonial__content__item">
                 Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
-                 Highly recommended!
+                Highly recommended!
               </p>
               <h3 class="testimonial__content__heading">
                 <strong>
@@ -198,6 +215,9 @@
           </figure>
         </div>
       </section>
+      <!--END OF TESTIMONY SECTION-->
+
+      <!--PRODUCTS - VISUAL DESIGNS-->
       <aside class="products">
         <picture class="product__item">
           <source media="(min-width: 620px)" srcset="./images/desktop/image-gallery-milkbottles.jpg">
@@ -223,8 +243,12 @@
 
       </aside>
     </main>
+    <!--END OF MAIN-->
+
+    <!--FOOTER SECTION-->
     <footer class="footer__wrapper">
       <div class="footer">
+        <!--FOOTER LOGO-->
         <div class="footer__logo__wrapper">
           <a class="link--btn footer__link--btn" href="./">
             <svg class="footer__logo" width="124" height="24" role="img" aria-label="sunnyside home page"
@@ -234,6 +258,7 @@
                 fill="#FFF" fill-rule="nonzero" /></svg>
           </a>
         </div>
+        <!--FOOTER NAV LIST-->
         <ul class="footer__nav">
           <li>
             <a class="link--btn footer__link--btn" href="./" aria-label="about page">About</a>
@@ -245,6 +270,9 @@
             <a class="link--btn footer__link--btn" href="./" aria-label="projects page">Projects</a>
           </li>
         </ul>
+        <!--END OF FOOTER NAV LIST-->
+
+        <!--SOCIAL LINK ICONS-->
         <ul class="socials">
           <li>
             <a class="link--btn" href="#">
@@ -267,6 +295,7 @@
             </a>
           </li>
         </ul>
+        <!--END OF SOCIAL LIST -->
       </div>
     </footer>
   </div>

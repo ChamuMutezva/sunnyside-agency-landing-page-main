@@ -12,6 +12,16 @@
 .menu__btn {
 	background-color: inherit;
 	border: none;
+	transition: all 1s ease-out;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:focus:focus-visible, &:hover {
+		outline: max(1px, 0.1em) dashed currentColor;
+		outline-offset: 0.25em;
+	}
 }
 
 .nav__list {
@@ -33,12 +43,8 @@
 		top: -24px;
 		right: 0;
 		width: 0;
-		height: 0;
-		//background-color: rebeccapurple;
-		border: 24px solid transparent;
-		//border-right-color: transparent;
-		//border-right-style: solid;
-		//border-right-width: 24px;
+		height: 0;		
+		border: 24px solid transparent;		
 		border-right: 24px solid white;
 	}
 }
@@ -58,7 +64,7 @@
 		outline: none;
 	}
 
-	&:focus:focus-visible {
+	&:focus:focus-visible, &:hover {
 		outline: max(1px, 0.1em) dashed currentColor;
 		outline-offset: 0.25em;
 	}

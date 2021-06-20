@@ -2,13 +2,12 @@
 @use 'sass:math';
 
 .hero {
-    // height: 0;
-    //padding-top: 143%;
+   
     position: relative;
     width: 100%;
     text-align: center;
     padding-top: 69%;
-    // top: 15rem;
+    
 }
 
 .arrow {
@@ -16,6 +15,11 @@
     margin: auto;
     position: relative;
     top: 5.5rem;
+    transition: all 1s ease-out;
+
+    &:hover {
+        transform: scale(1.2);
+    }
 }
 
 .main__title {
