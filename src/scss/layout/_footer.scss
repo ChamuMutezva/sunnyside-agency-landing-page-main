@@ -32,4 +32,13 @@
 .footer__link--btn {
 	color: #458D7E;
 	text-decoration: none;
+	&:hover, &:focus {
+		color: base.$white;
+	}
+}
+
+.social__icon {
+	&:hover, &:focus {
+		filter: brightness(0) invert(1);
+	}
 }

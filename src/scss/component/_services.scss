@@ -66,11 +66,17 @@
 		content: "";
 		bottom: -1px;
 		left: -3px;
-		width: 100%;
+		width: 108%;
 		height: 0.6rem;
 		background-color: #FAD400;
 		border-radius: 4px;
 		z-index: -1;
+	}
+}
+
+.link__brown--btn {
+	&::before {
+		background-color: base.$soft-red;
 	}
 }
 
