@@ -524,5 +524,9 @@ header {
     gap: 1rem;
   }
 }
+.wrapper {
+  max-width: 1480px;
+  margin: auto;
+}
 
 /*# sourceMappingURL=/main.d9ee62f6.css.map */
