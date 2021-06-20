@@ -10,18 +10,19 @@
 
   <title>Frontend Mentor | Sunnyside agency landing page</title>
   <link rel="stylesheet" href="/main.d9ee62f6.css">
-  <!-- <link rel="stylesheet" href="./src/css/style.css"> -->
+  <link rel="stylesheet" href="/style.967ba849.css"> 
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:wght@700;900&display=swap" rel="stylesheet">
 
-<script src="/main.d9ee62f6.js"></script></head>
+<script src="/main.d9ee62f6.js"></script><script src="/style.967ba849.js"></script></head>
 
 <body>
   <div class="wrapper">
+    <a class="skip__to__content" href="#main">Skip to content</a>
     <header>
       <nav class="nav">
         <div class="logo">
-          <a class="link--btn" href="./"><img src="/logo.236e4034.svg" alt="welcome to Sunnyside"></a>
+          <a class="link--btn" href="./"><img src="/logo.236e4034.svg" alt="welcome to Sunnyside homepage"></a>
         </div>
         <ul class="nav__list hide__nav">
           <li class="nav__list__item">
@@ -52,7 +53,7 @@
       </div>
     </header>
 
-    <main>
+    <main id="main">
       <section class="services">
 
         <div class="services__item brand">
@@ -71,7 +72,11 @@
                 We are a full-service creative agency specializing in helping brands grow fast.
                 Engage your clients through compelling visuals that do most of the marketing for you.
               </p>
-              <div class="learn__wrapper"><a class="learn__link--btn" href="">Learn more</a></div>
+              <div class="learn__wrapper">
+                <a class="link--btn learn__link--btn" href="./">Learn more
+                   <span class="sr__only--link"> about how to promote your brand</span>
+                  </a>
+              </div>
             </div>
           </div>
         </div>
@@ -93,7 +98,11 @@
                 we’ll build
                 and extend your brand in digital places.
               </p>
-              <div class="learn__wrapper"><a class="learn__link--btn link__brown--btn" href="">Learn more</a></div>
+              <div class="learn__wrapper">
+                <a class="link--btn learn__link--btn link__brown--btn" href="">Learn more
+                  <span class="sr__only--link">about how to maintain and grow your brand</span>
+                </a>
+              </div>
             </div>
           </div>
 
@@ -116,8 +125,8 @@
               <div class="designs__wrapper">
                 <h2 class="services__title photo__title"> Photography</h2>
                 <p class="services__content photo__content">
-                  Increase your credibility by getting the most stunning, high-quality photos that improve your business
-                  image.
+                  Increase your credibility by getting the most stunning, 
+                  high-quality photos that improve your business image.
                 </p>
               </div>
             </div>
@@ -155,9 +164,8 @@
             <img class="testimonials__img" src="/image-thomas.0c264e5c.jpg" alt="the chief Operating officer Thomas s">
             <figcaption class="testimonial__content">
               <p class="testimonial__content__item">
-                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s success made it a satisfying and
-                enjoyable
-                experience.
+                Sunnyside’s enthusiasm coupled with their keen interest in our brand’s
+                 success made it a satisfying and enjoyable experience.
               </p>
               <h3 class="testimonial__content__heading">
                 <strong>
@@ -174,8 +182,8 @@
             <img class="testimonials__img" src="/image-jennie.5cdc4875.jpg" alt="business owner Jennie f">
             <figcaption class="testimonial__content">
               <p class="testimonial__content__item">
-                Incredible end result! Our sales increased over 400% when we worked with Sunnyside. Highly recommended!
-
+                Incredible end result! Our sales increased over 400% when we worked with Sunnyside.
+                 Highly recommended!
               </p>
               <h3 class="testimonial__content__heading">
                 <strong>
@@ -235,22 +243,22 @@
         </ul>
         <ul class="socials">
           <li>
-            <a href="#">
+            <a class="link--btn" href="#">
               <img class="social__icon" src="/icon-facebook.db88fd38.svg" alt="visit us on facebook">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="link--btn" href="#">
               <img class="social__icon" src="/icon-instagram.55128b72.svg" alt="visit us on instagram">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="link--btn" href="#">
               <img class="social__icon" src="/icon-twitter.9dcd00ee.svg" alt="visit us on twitter">
             </a>
           </li>
           <li>
-            <a href="#">
+            <a class="link--btn" href="#">
               <img class="social__icon" src="/icon-pinterest.6b47e241.svg" alt="visit us on pinterest">
             </a>
           </li>

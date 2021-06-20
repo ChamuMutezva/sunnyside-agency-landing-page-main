@@ -53,6 +53,15 @@
 	color: base.$dark-grayish-blue;
 	line-height: 1.3;
 	text-decoration: none;
+
+	&:focus {
+		outline: none;
+	}
+
+	&:focus:focus-visible {
+		outline: max(1px, 0.1em) dashed currentColor;
+		outline-offset: 0.25em;
+	}
 }
 
 .hide__nav {
