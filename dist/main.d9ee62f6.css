@@ -302,6 +302,7 @@ header {
 
 .main__title {
   font-size: 2.5rem;
+  text-transform: uppercase;
   letter-spacing: 6.25px;
   color: white;
 }
@@ -326,7 +327,7 @@ header {
   }
 
   .hero__content {
-    top: -28rem;
+    top: -30rem;
   }
 
   .main__title {
