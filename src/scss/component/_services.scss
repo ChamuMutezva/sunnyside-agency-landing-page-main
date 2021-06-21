@@ -125,6 +125,17 @@
 	.services__deco__img {
 		display: flex;
 	}
+	.graphic__design {
+		background-image: url("../../images/desktop/image-graphic-design.jpg");
+	}
+	
+	.photo__design {
+		background-image: url("../../images/desktop/image-photography.jpg");
+	}
+
+	.designs {
+		padding-top: 53%;	
+	}
 }
 
 @media screen and (min-width: 1180px) {

@@ -119,6 +119,14 @@ header {
 .menu__btn {
   background-color: inherit;
   border: none;
+  transition: all 1s ease-out;
+}
+.menu__btn:focus {
+  outline: none;
+}
+.menu__btn:focus:focus-visible, .menu__btn:hover {
+  outline: max(1px, 0.1em) dashed currentColor;
+  outline-offset: 0.25em;
 }
 
 .nav__list {
@@ -286,6 +294,10 @@ header {
   margin: auto;
   position: relative;
   top: 5.5rem;
+  transition: all 1s ease-out;
+}
+.arrow:hover {
+  transform: scale(1.2);
 }
 
 .main__title {
@@ -449,6 +461,18 @@ header {
 
   .services__deco__img {
     display: flex;
+  }
+
+  .graphic__design {
+    background-image: url("/image-graphic-design.e6dce727.jpg");
+  }
+
+  .photo__design {
+    background-image: url("/image-photography.8b07aa52.jpg");
+  }
+
+  .designs {
+    padding-top: 53%;
   }
 }
 @media screen and (min-width: 1180px) {

@@ -462,6 +462,18 @@ header {
   .services__deco__img {
     display: flex;
   }
+
+  .graphic__design {
+    background-image: url("/image-graphic-design.e6dce727.jpg");
+  }
+
+  .photo__design {
+    background-image: url("/image-photography.8b07aa52.jpg");
+  }
+
+  .designs {
+    padding-top: 53%;
+  }
 }
 @media screen and (min-width: 1180px) {
   .services__wrapper {
