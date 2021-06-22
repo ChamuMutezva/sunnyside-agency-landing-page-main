@@ -229,6 +229,11 @@ header {
     align-items: center;
   }
 }
+@media screen and (min-width: 1180px) {
+  .header__link--btn img {
+    min-width: 10rem;
+  }
+}
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr;
