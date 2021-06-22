@@ -548,6 +548,27 @@ header {
     gap: 1rem;
   }
 }
+@media screen and (min-width: 1180px) {
+  .testimonials {
+    padding: 10rem 1.5rem 6.5rem;
+  }
+
+  .testimonials__header {
+    font-size: 1.25rem;
+  }
+
+  .testimonial__list {
+    margin-top: 5.5rem;
+  }
+
+  .testimonial__content {
+    margin-top: 3rem;
+  }
+
+  .testimonial__content__item {
+    padding-bottom: 5rem;
+  }
+}
 .skip__to__content {
   left: 50%;
   position: absolute;
