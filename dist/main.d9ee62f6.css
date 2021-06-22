@@ -323,7 +323,7 @@ header {
 }
 @media screen and (min-width: 1180px) {
   .hero {
-    padding-top: 37.5%;
+    padding-top: 34.5%;
   }
 
   .hero__content {
@@ -390,10 +390,12 @@ header {
 
 .photo__title {
   color: #052C3B;
+  font-size: 1.75rem;
 }
 
 .graphic__title {
   color: #24554A;
+  font-size: 1.75rem;
 }
 
 .learn__link--btn {
@@ -444,7 +446,7 @@ header {
 .designs__wrapper {
   text-align: center;
   padding: 1.5rem;
-  max-width: 22.25rem;
+  max-width: 26.25rem;
 }
 
 @media screen and (min-width: 620px) {
@@ -456,7 +458,8 @@ header {
     flex-direction: row-reverse;
   }
 
-  .services__content, .services__img {
+  .services__content,
+.services__img {
     flex: 1 1 50%;
   }
 
@@ -479,6 +482,15 @@ header {
 @media screen and (min-width: 1180px) {
   .services__wrapper {
     text-align: left;
+  }
+
+  .services__title {
+    font-size: 2.5rem;
+  }
+
+  .graphic__title,
+.photo__title {
+    font-size: 1.75rem;
   }
 }
 .testimonials {
