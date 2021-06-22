@@ -68,6 +68,8 @@
 		outline: max(1px, 0.1em) dashed currentColor;
 		outline-offset: 0.25em;
 	}
+
+	
 }
 
 .hide__nav {
@@ -85,7 +87,7 @@
 	}
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 680px) {
 	.hide__nav {
 		display: flex;
 	}
@@ -131,5 +133,11 @@
 	.nav {
 		padding: 2.125rem 2.5rem;
 		align-items: center;
+	}
+}
+
+@media screen and (min-width: 1180px) {
+	.link--btn img {
+		min-width: 10rem;
 	}
 }

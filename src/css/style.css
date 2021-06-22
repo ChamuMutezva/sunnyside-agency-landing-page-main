@@ -102,7 +102,7 @@ header {
   background-position: 50% 50%;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 680px) {
   header {
     background-size: 100% 100%;
     background-image: url("../../images/desktop/image-header.jpg");
@@ -186,7 +186,7 @@ header {
   background-color: #ffef97;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 680px) {
   .hide__nav {
     display: flex;
   }
@@ -229,12 +229,17 @@ header {
     align-items: center;
   }
 }
+@media screen and (min-width: 1180px) {
+  .link--btn img {
+    min-width: 10rem;
+  }
+}
 .products {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 680px) {
   .products {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
@@ -312,13 +317,13 @@ header {
   top: -13rem;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 680px) {
   .hero {
     padding-top: 54%;
   }
 
   .hero__content {
-    top: -20rem;
+    top: -22rem;
   }
 }
 @media screen and (min-width: 1180px) {
@@ -327,7 +332,7 @@ header {
   }
 
   .hero__content {
-    top: -30rem;
+    top: -26rem;
   }
 
   .main__title {
@@ -449,7 +454,7 @@ header {
   max-width: 26.25rem;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 680px) {
   .services__item {
     flex-direction: row;
     flex: 1 1 50%;
@@ -541,7 +546,7 @@ header {
   margin: auto auto 4.5rem;
 }
 
-@media screen and (min-width: 620px) {
+@media screen and (min-width: 680px) {
   .testimonial__list {
     display: flex;
     flex-direction: row;
