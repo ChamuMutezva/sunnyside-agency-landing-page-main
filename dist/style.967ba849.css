@@ -550,7 +550,7 @@ header {
 }
 @media screen and (min-width: 1180px) {
   .testimonials {
-    padding: 10rem 1.5rem 6.5rem;
+    padding: 10rem 1.5rem 5rem;
   }
 
   .testimonials__header {
