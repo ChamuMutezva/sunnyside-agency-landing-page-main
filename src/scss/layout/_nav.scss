@@ -122,7 +122,8 @@
 
 		&:hover , &:focus {
 			color: base.$white;
-			background-color: color.scale(base.$grayish-blue, $lightness: 75%);
+			//background-color: color.scale(base.$grayish-blue, $lightness: 75%);
+			background-color: hsla(0, 0%, 100%, 0.301);
 			//opacity: 0.5;
 			
 			//border: 1px solid black;
